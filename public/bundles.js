@@ -18386,6 +18386,10 @@ var _Membercomponent = __webpack_require__(36);
 
 var _Membercomponent2 = _interopRequireDefault(_Membercomponent);
 
+var _Projectcomponent = __webpack_require__(37);
+
+var _Projectcomponent2 = _interopRequireDefault(_Projectcomponent);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -18423,220 +18427,7 @@ var App = function (_Component) {
           'div',
           { className: 'row' },
           _react2.default.createElement(_Membercomponent2.default, null),
-          _react2.default.createElement(
-            'div',
-            { className: 'col-xs-8 col-sm-8 col-md-8 col-lg-8' },
-            _react2.default.createElement(
-              'button',
-              { type: 'button', className: 'btn btn-primary' },
-              _react2.default.createElement('span', { className: 'fa fa-plus mr-5' }),
-              'Th\xEAm C\xF4ng Vi\u1EC7c'
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'row mt-15' },
-              _react2.default.createElement(
-                'div',
-                { className: 'col-xs-6 col-sm-6 col-md-6 col-lg-6' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'input-group' },
-                  _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: 'Nh\u1EADp t\u1EEB kh\xF3a...' }),
-                  _react2.default.createElement(
-                    'span',
-                    { className: 'input-group-btn' },
-                    _react2.default.createElement(
-                      'button',
-                      { className: 'btn btn-primary', type: 'button' },
-                      _react2.default.createElement('span', { className: 'fa fa-search mr-5' }),
-                      'T\xECm'
-                    )
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'col-xs-6 col-sm-6 col-md-6 col-lg-6' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'dropdown' },
-                  _react2.default.createElement(
-                    'button',
-                    { className: 'btn btn-primary dropdown-toggle', type: 'button', id: 'dropdownMenu1', 'data-toggle': 'dropdown', 'aria-haspopup': 'true', 'aria-expanded': 'true' },
-                    'S\u1EAFp X\u1EBFp ',
-                    _react2.default.createElement('span', { className: 'fa fa-caret-square-o-down ml-5' })
-                  ),
-                  _react2.default.createElement(
-                    'ul',
-                    { className: 'dropdown-menu', 'aria-labelledby': 'dropdownMenu1' },
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      _react2.default.createElement(
-                        'a',
-                        { role: 'button' },
-                        _react2.default.createElement(
-                          'span',
-                          { className: 'fa fa-sort-alpha-asc pr-5' },
-                          'T\xEAn A-Z'
-                        )
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      _react2.default.createElement(
-                        'a',
-                        { role: 'button' },
-                        _react2.default.createElement(
-                          'span',
-                          { className: 'fa fa-sort-alpha-desc pr-5' },
-                          'T\xEAn Z-A'
-                        )
-                      )
-                    ),
-                    _react2.default.createElement('li', { role: 'separator', className: 'divider' }),
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      _react2.default.createElement(
-                        'a',
-                        { role: 'button' },
-                        'Tr\u1EA1ng Th\xE1i K\xEDch Ho\u1EA1t'
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      _react2.default.createElement(
-                        'a',
-                        { role: 'button' },
-                        'Tr\u1EA1ng Th\xE1i \u1EA8n'
-                      )
-                    )
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'row mt-15' },
-              _react2.default.createElement(
-                'div',
-                { className: 'col-xs-12 col-sm-12 col-md-12 col-lg-12' },
-                _react2.default.createElement(
-                  'table',
-                  { className: 'table table-bordered table-hover' },
-                  _react2.default.createElement(
-                    'thead',
-                    null,
-                    _react2.default.createElement(
-                      'tr',
-                      null,
-                      _react2.default.createElement(
-                        'th',
-                        { className: 'text-center' },
-                        'STT'
-                      ),
-                      _react2.default.createElement(
-                        'th',
-                        { className: 'text-center' },
-                        'T\xEAn'
-                      ),
-                      _react2.default.createElement(
-                        'th',
-                        { className: 'text-center' },
-                        'Tr\u1EA1ng Th\xE1i'
-                      ),
-                      _react2.default.createElement(
-                        'th',
-                        { className: 'text-center' },
-                        'H\xE0nh \u0110\u1ED9ng'
-                      )
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'tbody',
-                    null,
-                    _react2.default.createElement(
-                      'tr',
-                      null,
-                      _react2.default.createElement('td', null),
-                      _react2.default.createElement(
-                        'td',
-                        null,
-                        _react2.default.createElement('input', { type: 'text', className: 'form-control' })
-                      ),
-                      _react2.default.createElement(
-                        'td',
-                        null,
-                        _react2.default.createElement(
-                          'select',
-                          { className: 'form-control' },
-                          _react2.default.createElement(
-                            'option',
-                            { value: -1 },
-                            'T\u1EA5t C\u1EA3'
-                          ),
-                          _react2.default.createElement(
-                            'option',
-                            { value: 0 },
-                            '\u1EA8n'
-                          ),
-                          _react2.default.createElement(
-                            'option',
-                            { value: 1 },
-                            'K\xEDch Ho\u1EA1t'
-                          )
-                        )
-                      ),
-                      _react2.default.createElement('td', null)
-                    ),
-                    _react2.default.createElement(
-                      'tr',
-                      null,
-                      _react2.default.createElement(
-                        'td',
-                        null,
-                        '1'
-                      ),
-                      _react2.default.createElement(
-                        'td',
-                        null,
-                        'H\u1ECDc l\u1EADp tr\xECnh'
-                      ),
-                      _react2.default.createElement(
-                        'td',
-                        { className: 'text-center' },
-                        _react2.default.createElement(
-                          'span',
-                          { className: 'label label-success' },
-                          'K\xEDch Ho\u1EA1t'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'td',
-                        { className: 'text-center' },
-                        _react2.default.createElement(
-                          'button',
-                          { type: 'button', className: 'btn btn-warning' },
-                          _react2.default.createElement('span', { className: 'fa fa-pencil mr-5' }),
-                          'S\u1EEDa'
-                        ),
-                        '\xA0',
-                        _react2.default.createElement(
-                          'button',
-                          { type: 'button', className: 'btn btn-danger' },
-                          _react2.default.createElement('span', { className: 'fa fa-trash mr-5' }),
-                          'X\xF3a'
-                        )
-                      )
-                    )
-                  )
-                )
-              )
-            )
-          )
+          _react2.default.createElement(_Projectcomponent2.default, null)
         )
       );
     }
@@ -18824,6 +18615,132 @@ var Membercomponent = function (_Component) {
 
 ;
 exports.default = Membercomponent;
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Projectcomponent = function (_Component) {
+    _inherits(Projectcomponent, _Component);
+
+    function Projectcomponent() {
+        _classCallCheck(this, Projectcomponent);
+
+        return _possibleConstructorReturn(this, (Projectcomponent.__proto__ || Object.getPrototypeOf(Projectcomponent)).apply(this, arguments));
+    }
+
+    _createClass(Projectcomponent, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                { className: "col-xs-8 col-sm-8 col-md-8 col-lg-8" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "row mt-15" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "col-xs-12 col-sm-12 col-md-12 col-lg-12" },
+                        _react2.default.createElement(
+                            "table",
+                            { className: "table table-bordered table-hover" },
+                            _react2.default.createElement(
+                                "thead",
+                                null,
+                                _react2.default.createElement(
+                                    "tr",
+                                    null,
+                                    _react2.default.createElement(
+                                        "th",
+                                        { className: "text-center" },
+                                        "STT"
+                                    ),
+                                    _react2.default.createElement(
+                                        "th",
+                                        { className: "text-center" },
+                                        "Project Name"
+                                    ),
+                                    _react2.default.createElement(
+                                        "th",
+                                        { className: "text-center" },
+                                        "List Member"
+                                    ),
+                                    _react2.default.createElement(
+                                        "th",
+                                        { className: "text-center" },
+                                        "Button Action"
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                "tbody",
+                                null,
+                                _react2.default.createElement(
+                                    "tr",
+                                    null,
+                                    _react2.default.createElement(
+                                        "td",
+                                        { className: "text-center" },
+                                        "1"
+                                    ),
+                                    _react2.default.createElement(
+                                        "td",
+                                        { className: "text-center" },
+                                        "H\u1ECDc l\u1EADp tr\xECnh"
+                                    ),
+                                    _react2.default.createElement("td", { className: "text-center" }),
+                                    _react2.default.createElement(
+                                        "td",
+                                        { className: "text-center" },
+                                        _react2.default.createElement(
+                                            "button",
+                                            { type: "button", className: "btn btn-warning" },
+                                            _react2.default.createElement("span", { className: "fa fa-pencil mr-5" }),
+                                            "S\u1EEDa"
+                                        ),
+                                        "\xA0",
+                                        _react2.default.createElement(
+                                            "button",
+                                            { type: "button", className: "btn btn-danger" },
+                                            _react2.default.createElement("span", { className: "fa fa-trash mr-5" }),
+                                            "X\xF3a"
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Projectcomponent;
+}(_react.Component);
+
+;
+exports.default = Projectcomponent;
 
 /***/ })
 /******/ ]);
