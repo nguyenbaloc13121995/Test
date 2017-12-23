@@ -2,36 +2,27 @@
 const express = require('express')
 const app = express();
 //Configure public
-app.use(express.static('public'));
+app.use(express.static("public"));
 //Configure template engine ejs
-app.set('view engine' , 'ejs');
-app.set('views','./views');
+app.set("view engine","ejs")
+app.set("views","./views")
 //Configure body-parser
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-//import Models
-var {Members,Projects} = require('./connectDatabase.js');
-//API Create Members
-app.post('/createMember',(req,res)=>{
-    var {name,numberphone,project} = req.body;
-    Members.create({name:name,numberphone:numberphone,project:project})
-        .then(member => res.json(member))
-        .catch(err => console.log(`Error : ${err}`));
-})
-//API Create Project
-app.post('/createProject',(req,res)=>{
-    var {name,listmember} = req.body;
-    Projects.create({name:name,listmember:listmember})
-        .then(member => res.json(member))
-        .catch(err => console.log(`Error : ${err}`));
-})
-//API Show Detail Project
-app.get('/showProject',(req,res)=>{
-    Projects.findAll()
-        .then(member => res.json(member))
-        .catch(err => console.log(`Error : ${err}`));
-})
+//import Routes
+const memberRoutes = require('./Route/memberRoute');
+const projectRoutes = require('./Route/projectRoute');
+//Route API
+app.use('/api',memberRoutes)
+app.use('/api',projectRoutes);
+app.get('/',(req,res)=>{
+	res.render('index');
+});
 //Configure port
 const port = process.env.PORT || 3000;
 app.listen(3000 , ()=>console.log("Started Server"));
+//Catch error link
+app.get('*',(req,res)=>{
+	res.status(404).json('Không tìm thấy đường dẫn Đường dẫn nhập sai');
+});
