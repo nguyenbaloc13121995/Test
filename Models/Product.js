@@ -1,11 +1,12 @@
 module.exports = (db, type) => {
-    const Projects = db.define('Projects',
+    const Product = db.define('Product',
         {
             name: type.STRING,
-            listmember: type.STRING,
+            price: type.INTEGER,
+            // status: type.STRING,
         },{
             timestamps: false
         }
     )
-    return Projects;
+    return Product;
 }

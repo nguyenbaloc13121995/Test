@@ -11,14 +11,17 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 //import Routes
-const memberRoutes = require('./Route/memberRoute');
-const projectRoutes = require('./Route/projectRoute');
+const productRoutes = require('./Route/productRoute');
 //Route API
-app.use('/api',memberRoutes)
-app.use('/api',projectRoutes);
-app.get('/',(req,res)=>{
-	res.render('index');
-});
+app.use('/api',productRoutes);
+//config appGet
+var appGet = function(req,res){
+	res.render('index')
+}
+app.get("/",appGet)
+app.get("/product-list",appGet)
+app.get("/add/product",appGet)
+app.get('/product/:id/edit',appGet)
 //Configure port
 const port = process.env.PORT || 3000;
 app.listen(3000 , ()=>console.log("Started Server"));

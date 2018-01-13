@@ -1,0 +1,2 @@
+export const ADD_PRODUCT = 'ADD PRODUCT'
+export const FETCH_PRODUCT = 'FETCH PRODUCT'
