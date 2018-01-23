@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import ListItem from './../../Components/ListItemComponent/ListItem'
 import ProductList from './../../Components/ProductListComponent/ProductList'
-import { actFetchProductRequest } from './../../Actions/index'
+import { actFetchProductRequest,deleteProductRequest } from './../../Actions/index'
 import { connect } from 'react-redux'
 import axios from 'axios'
 import apiCaller from './../../utils/apiCaller'
+import { Link } from 'react-router-dom'
 class ProductListContainer extends Component {
     componentDidMount() {
         this.props.FetchProduct()
+    }
+    onDelete=(id)=>{
+        this.props.DeleteProduct(id)
     }
     showContent = (products) => {
         var result = null;
@@ -17,6 +21,7 @@ class ProductListContainer extends Component {
                     key={i}
                     index={i}
                     products={r}
+                    onDelete={this.onDelete}
                 />
             })
         }
@@ -26,7 +31,7 @@ class ProductListContainer extends Component {
         var { products } = this.props;
         return (
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <button type="button" className="btn btn-default mb-10">Add Product</button>
+                <Link to="/add/product" className="btn btn-info">Add Product</Link>
                 <ProductList>
                     {this.showContent(products)}
                     {/* <ListItem/> */}
@@ -44,6 +49,9 @@ const mapDispatchToProps = (dispatch, props) => {
     return {
         FetchProduct: () => {
             dispatch(actFetchProductRequest())
+        },
+        DeleteProduct :(id)=>{
+            dispatch(deleteProductRequest(id))
         }
     }
 }

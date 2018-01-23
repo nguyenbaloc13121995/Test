@@ -3,7 +3,7 @@ module.exports = (db, type) => {
         {
             name: type.STRING,
             price: type.INTEGER,
-            // status: type.STRING,
+            status: type.STRING,
         },{
             timestamps: false
         }
